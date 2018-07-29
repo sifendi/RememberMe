@@ -95,10 +95,7 @@ public class MainActivity extends AppCompatActivity
                 fragment = new fragment_camera_class();
                 break;
             case R.id.nav_gallery:
-//                fragment = new Menu2();
-                break;
-            case R.id.nav_share:
-//                fragment = new Menu3();
+                fragment = new fragment_gallery_class();
                 break;
         }
 

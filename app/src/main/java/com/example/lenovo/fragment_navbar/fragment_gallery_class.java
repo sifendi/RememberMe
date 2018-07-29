@@ -7,12 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class fragment_camera_class extends Fragment {
+public class fragment_gallery_class extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_camera, container, false);
+        //returning our layout file
+        //change R.layout.yourlayoutfilename for each of your fragments
+        return inflater.inflate(R.layout.fragment_gallery, container, false);
     }
 
 
@@ -20,9 +22,7 @@ public class fragment_camera_class extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
-        getActivity().setTitle("Task");
+        getActivity().setTitle("My Gallery");
     }
-
-
 
 }
